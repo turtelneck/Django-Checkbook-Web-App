@@ -1,7 +1,7 @@
 {% extends 'checkbook_base.html' %}
 	{% block title%}Add New Transaction{% endblock %}
 	{% block content %}
-			<div class="new-transaction-form">
+			<div class="new-transaction-form" method="POST">
 				<form>
 					{% csrf_token %}
 					{{ form.as_p }}
